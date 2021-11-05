@@ -1,0 +1,9 @@
+[29-Aug-2021 21:43:54 UTC] PHP Notice:  Undefined variable: email in /home/safeotqu/hydrojob.com/mailer/m.php on line 33
+[29-Aug-2021 21:43:54 UTC] PHP Notice:  Undefined variable: hash in /home/safeotqu/hydrojob.com/mailer/m.php on line 33
+[29-Aug-2021 21:46:15 UTC] PHP Notice:  Undefined variable: email in /home/safeotqu/hydrojob.com/mailer/m.php on line 33
+[29-Aug-2021 21:46:15 UTC] PHP Notice:  Undefined variable: hash in /home/safeotqu/hydrojob.com/mailer/m.php on line 33
+[05-Nov-2021 08:44:06 UTC] PHP Notice:  Undefined index: phrase in /home/rknewsco/test.rknews-24.com/mailer/m.php on line 27
+[05-Nov-2021 08:54:54 UTC] PHP Notice:  Undefined variable: _SESSION in /home/rknewsco/test.rknews-24.com/mailer/m.php on line 26
+[05-Nov-2021 09:02:45 UTC] PHP Notice:  Undefined variable: _SESSION in /home/rknewsco/test.rknews-24.com/mailer/m.php on line 26
+[05-Nov-2021 09:02:45 UTC] PHP Notice:  Undefined index: phrase in /home/rknewsco/test.rknews-24.com/mailer/m.php on line 27
+[05-Nov-2021 09:03:05 UTC] PHP Notice:  Undefined variable: _SESSION in /home/rknewsco/test.rknews-24.com/mailer/m.php on line 26
